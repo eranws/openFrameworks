@@ -6,7 +6,7 @@
 #include "ofPixels.h"
 
 
-#include "oni/OpenNI.h"
+#include "OpenNI.h"
 
 
 class ofNiGrabber : public ofBaseVideoGrabber{

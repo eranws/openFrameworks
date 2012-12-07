@@ -1,7 +1,6 @@
 #include "ofNiGrabber.h"
 #include "ofUtils.h"
 #ifdef TARGET_WIN32
-#include "oni\openni.h"
 
 using namespace openni;
 //using openni::OpenNI;
