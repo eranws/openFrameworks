@@ -22,7 +22,7 @@ void testApp::update(){
 	vidGrabber.update();
 	
 	if (vidGrabber.isFrameNew()){
-		int totalPixels = camWidth*camHeight*3;
+		int totalPixels = camWidth*camHeight*3;//DEPTH!
 		unsigned char * pixels = vidGrabber.getPixels();
 		for (int i = 0; i < totalPixels; i++){
 			videoInverted[i] = 255 - pixels[i];

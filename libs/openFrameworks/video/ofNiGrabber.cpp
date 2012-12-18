@@ -9,7 +9,7 @@ using namespace openni;
 ofNiGrabber::ofNiGrabber(){
 
 	//---------------------------------
-	#ifdef OF_VIDEO_CAPTURE_DIRECTSHOW
+	#ifdef OF_VIDEO_CAPTURE_OPENNI
 	//---------------------------------
 
 		bVerbose 			= false;
@@ -145,7 +145,7 @@ void ofNiGrabber::draw( int x, int y )
 void ofNiGrabber::listDevices(){
 #if 0
 	//---------------------------------
-	//	#ifdef OF_VIDEO_CAPTURE_DIRECTSHOW
+	//	#ifdef OF_VIDEO_CAPTURE_OPENNI
 	//---------------------------------
 		ofLog(OF_LOG_NOTICE, "---");
 
@@ -182,9 +182,9 @@ const char *	getVendor () const
 //--------------------------------------------------------------------
 void ofNiGrabber::update(){
 
-#if 0
+
 	//---------------------------------
-	#ifdef OF_VIDEO_CAPTURE_DIRECTSHOW
+	#ifdef OF_VIDEO_CAPTURE_OPENNI
 	//---------------------------------
 
 		if (bGrabberInited == true){
@@ -268,7 +268,7 @@ void ofNiGrabber::update(){
 void ofNiGrabber::close(){
 
 	//---------------------------------
-	#ifdef OF_VIDEO_CAPTURE_DIRECTSHOW
+	#ifdef OF_VIDEO_CAPTURE_OPENNI
 	//---------------------------------
 
 		if (bGrabberInited == true){
@@ -337,7 +337,7 @@ void ofNiGrabber::setDesiredFrameRate(int framerate){
 void ofNiGrabber::videoSettings(void){
 
 	//---------------------------------
-	#ifdef OF_VIDEO_CAPTURE_DIRECTSHOW
+	#ifdef OF_VIDEO_CAPTURE_OPENNI
 	//---------------------------------
 
 //		if (bGrabberInited == true) VI.showSettingsWindow(device);
